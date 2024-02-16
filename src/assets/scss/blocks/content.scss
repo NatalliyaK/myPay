@@ -1,0 +1,215 @@
+
+.content {
+  padding: 4rem 0 5.6rem;
+  background: $colorText;
+
+  &__icon {
+    padding-bottom: 1.6rem;
+    border-bottom: 0.1rem solid $borderLine;
+  }
+
+  &__icon-list {
+    display: flex;
+    gap: 7rem;
+    @include breakpoint($sm-bp) {
+      gap: 3rem;
+    }
+  }
+
+  &__tabs-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    @include breakpoint($xl-bp) {
+      gap: 0;
+    }
+
+    div table tbody tr td:last-child {
+      text-align: right;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    width: 12rem;
+    height: 17.2rem;
+    opacity: 0.6;
+    @include breakpoint($xl-bp) {
+      height: 14rem;
+    }
+    @include breakpoint($sm-bp) {
+      width: 8rem;
+      height: 9.4rem;
+      text-align: center;
+    }
+
+    figure img {
+      display: block;
+      margin-left: 1rem;
+      width: 11rem;
+      height: 11rem;
+      @include breakpoint($xl-bp) {
+        width: 9rem;
+        height: 9rem;
+      }
+      @include breakpoint($sm-bp) {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+
+    & figcaption {
+      text-align: center;
+      color: $subscribe;
+      font-size: 1.9rem;
+      margin-top: 1rem;
+      font-weight: 500;
+      white-space: nowrap;
+      @include breakpoint($sm-bp) {
+        font-size: 1.4rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  &__input {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    margin-bottom: 3.2rem;
+    @include breakpoint($xl-bp) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2.4rem;
+    }
+
+    p {
+      width: 18%;
+      @include breakpoint($xl-bp) {
+        width: 100%;
+      }
+    }
+
+    input {
+      border-radius: 4px;
+      background:$colorText;
+      -webkit-box-shadow: 1px 2px 6px 0 rgba(0, 0, 0, 0.3) inset;
+      box-shadow: inset 1px 2px 6px 0 rgba(0,0,0,.3);
+      border: 0.1rem solid rgba(0,0,0,.1);
+      padding: 1.6rem;
+      width: 43.7rem;
+      font-size: 3.2rem;
+      font-weight: 400;
+      @include breakpoint($sm-bp) {
+        padding: 0.8rem 1.6rem;
+        width: 33rem;
+        font-size: 2.4rem;
+      }
+
+      &::placeholder {
+        text-align: right;
+        color: $subscribe;
+      }
+    }
+
+  }
+
+  &__tabs {
+    padding-top: 1.6rem;
+  }
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    @include breakpoint($sm-bp) {
+      gap: 0;
+    }
+  }
+}
+
+.active {
+  border-bottom: 2px solid #40CCC4;
+  opacity: 1;
+}
+
+.choices__inner {
+  border-radius: 4px;
+  background:$colorText;
+  box-shadow: 1px 2px 6px 0 rgba(0, 0, 0, 0.40) inset;
+  padding: 1.6rem;
+  width: 43.7rem;
+  font-size: 3.2rem;
+  font-weight: 400;
+  z-index: 100;
+  @include breakpoint($sm-bp) {
+    padding: 0.8rem 1.6rem;
+    width: 33rem;
+    font-size: 2.4rem;
+  }
+}
+
+.choices[data-type*=select-one]:after {
+  opacity: 0;
+}
+
+.choices__list--dropdown .choices__item--selectable:hover {
+  background-color: $hover;
+}
+
+.choices__list--dropdown {
+  z-index: 100;
+}
+
+
+.content-mob {
+  &__list {
+    display: none;
+    @include breakpoint($xl-bp) {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    background-color: $bgTable;
+  }
+
+  &__price-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__sum {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}

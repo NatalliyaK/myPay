@@ -1,0 +1,201 @@
+@import "./vendor/vars";
+@import "./vendor/mixins";
+@import './vendor/setting.scss';
+
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(100vw / 1920 * 10);
+
+  @include breakpoint($xl-bp) {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @include breakpoint($sm-bp) {
+    font-size: calc(100vw / 375 * 10);
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  line-height: normal;
+  overflow-y: scroll
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: calc(100vw / 1920 * 10);
+
+  @include breakpoint($xl-bp) {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @include breakpoint($sm-bp) {
+    font-size: calc(100vw / 375 * 10);
+  }
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+select {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+}
+
+button {
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 144rem;
+  margin: 0 auto;
+  @include breakpoint($xl-bp) {
+    max-width: 61rem;
+  }
+  @include breakpoint($sm-bp) {
+    max-width: 33.5rem;
+  }
+}
+
+.overflow {
+  overflow: hidden !important;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.title {
+  color: $colorText;
+  font-size: 12rem;
+  font-weight: 700;
+  @include breakpoint($xl-bp) {
+    font-size: 6.4rem;
+  }
+}
+
+.subtitle {
+  color: $colorText;
+  font-size: 6.4rem;
+  font-weight: 500;
+  @include breakpoint($xl-bp) {
+    font-size: 2.4rem;
+  }
+}
+
+.text {
+  font-size: 3.2rem;
+  @include breakpoint($xl-bp) {
+    font-size: 2.4rem;
+  }
+}
+
+.text__mob {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.text__sm {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: $subscribe;
+}
+
+table {
+  margin-top: 1.2rem;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.8rem;
+  @include breakpoint($xl-bp) {
+    display: none;
+  }
+
+  thead tr th {
+    color: $subscribe;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  tbody tr {
+    border-radius: 4px;
+    background-color: $bgTable;
+  }
+
+  tbody tr td {
+    padding: 1.6rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  tbody tr td:first-child {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    padding-top: 3rem;
+  }
+
+  tbody tr div {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  tbody tr td .button {
+    cursor: pointer;
+    width: 22rem;
+    padding: 1.4rem 2.4rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+}
+
+.cr tbody tr td:first-child{
+  width: 18rem;
+}
+
+/*--------- popup -------------*/
+
+@import './blocks/header.scss';
+
+@import './blocks/button.scss';
+
+@import './blocks/content.scss';
+
+@import './blocks/error.scss';
+
+@import './blocks/main.scss';
+
+@import './blocks/po-pop.scss';
+
+/*------section------*/
+
+@import './blocks/footer.scss';

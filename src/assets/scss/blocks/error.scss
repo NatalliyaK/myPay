@@ -1,0 +1,74 @@
+.error {
+  overflow: hidden;
+  background-color: $bgError;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint($xl-bp) {
+    padding-top: 11rem;
+    align-items: flex-start;
+  }
+  @include breakpoint($sm-bp) {
+    padding-top: 6rem;
+  }
+
+  &__img {
+    width: 146rem;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint($xl-bp) {
+      width: 60rem;
+      height: 22rem;
+    }
+    @include breakpoint($sm-bp) {
+      width: 25rem;
+      height: 13rem;
+    }
+
+    a {
+      width: 100%;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 38%;
+    left: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint($sm-bp) {
+      top: 32%;
+      left: 12%;
+    }
+
+    h2 {
+      font-size: 9.6rem;
+      font-weight: 700;
+      color: $colorText;
+      @include breakpoint($xl-bp) {
+        font-size: 4.6rem;
+      }
+      @include breakpoint($sm-bp) {
+        font-size: 2.6rem;
+      }
+    }
+
+    a {
+      &:before {
+        background: linear-gradient(180deg, #12e3d9 0%, #086457 100%);
+      }
+      @include breakpoint($sm-bp) {
+        max-width: 28rem;
+        padding: 1.4rem 0.7rem;
+        font-size: 2.4rem;
+      }
+    }
+  }
+}

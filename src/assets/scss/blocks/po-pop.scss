@@ -1,0 +1,71 @@
+.po-pop {
+  &__wrapper {
+    background: rgba(21, 21, 21, 0.70);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  &__img {
+    width: 22rem;
+    height: 22rem;
+    @include breakpoint($xl-bp) {
+      width: 15rem;
+      height: 15rem;
+    }
+    @include breakpoint($sm-bp) {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+
+
+  &__modal {
+    transform: scale(0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem;
+    width: 70rem;
+    height: 50rem;
+    border-radius: 1.6rem;
+    background: $colorText;
+    box-shadow: 4px 4px 32.2px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+    @include breakpoint($xl-bp) {
+      width: 40rem;
+      height: 30rem;
+      padding: 1rem;
+    }
+    @include breakpoint($xl-bp) {
+      width: 30rem;
+      height: 27rem;
+    }
+  }
+
+  &__close {
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+  }
+
+  &__modal-close {
+    align-self: flex-end;
+  }
+
+  &__text {
+    font-size: 4rem;
+    font-weight: 500;
+    @include breakpoint($xl-bp) {
+      font-size: 2rem;
+    }
+  }
+}

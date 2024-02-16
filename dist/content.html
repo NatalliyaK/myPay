@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="">
+  <title>MyPay</title>
+  
+  <!-- CSS only -->
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="assets/css/style.min.css"></head>
+
+<body>
+  <!-- sprite -->
+  <svg style="display: none;">
+  
+    <symbol id="close"  viewBox="0 0 60 60">
+      <g>
+        <path d="M21.1602 38.8371L38.8402 21.1621M21.1602 21.1621L38.8402 38.8371" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+    </symbol>
+  </svg>
+  <!-- Header -->
+<!--  <header>
+
+</header>-->
+
+  <!-- Main content -->
+
+  <section class="content wrapper">
+      <div class="content__icon">
+          <ul class="content__icon-list">
+              <li class="content__icon-item">
+                  <div class="content__item active">
+                      <figure>
+                          <img src="assets/images/visa.svg" alt="icon">
+                          <figcaption>Карта банка</figcaption>
+                      </figure>
+                  </div>
+              </li>
+              <li class="content__icon-item">
+                  <div class="content__item">
+                      <figure>
+                          <img src="assets/images/sbp1.svg" alt="icon">
+                          <figcaption>СБП</figcaption>
+                      </figure>
+                  </div>
+              </li>
+              <li class="content__icon-item">
+                  <div class="content__item">
+                      <figure>
+                          <img src="assets/images/cr.svg" alt="icon">
+                          <figcaption>Криптовалюты</figcaption>
+                      </figure>
+                  </div>
+              </li>
+          </ul>
+      </div>
+      <div class="content__tabs">
+          <div class="content__tabs-item">
+              <div class="content__input">
+                  <p class="text">Оплата счета на</p>
+                  <input type="number" placeholder="RUB" class="input-pay">
+              </div>
+              <div>
+                  <p class="text">Банковские карты</p>
+                  <table>
+                      <thead>
+                      <tr>
+                          <td></td>
+                          <th>Сумма</th>
+                          <th>Срок зачисления</th>
+                          <th></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td>
+                              <div>
+                                  <img src="assets/images/sb-tb.svg" alt="icon">
+                              </div>
+                              СберБанк</td>
+                          <td class="valueInput">RUB</td>
+                          <td>Моментально</td>
+                          <td>
+                              <button class="button btn">Оплатить</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div>
+                                  <img src="assets/images/tn-tb.svg" alt="icon">
+                              </div>
+                              Тинькофф</td>
+                          <td class="valueInput">RUB</td>
+                          <td>Моментально</td>
+                          <td>
+                              <button class="button btn">Оплатить</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div>
+                                  <img src="assets/images/rf-tb.svg" alt="icon">
+                              </div>
+                              Райффайзен</td>
+                          <td class="valueInput">RUB</td>
+                          <td>Моментально</td>
+                          <td>
+                              <button class="button btn">Оплатить</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div>
+                                  <img src="assets/images/ru-tb.svg" alt="icon">
+                              </div>
+                              Любой банк РФ</td>
+                          <td class="valueInput">RUB</td>
+                          <td>Моментально</td>
+                          <td>
+                              <button class="button btn">Оплатить</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div>
+                                  <img src="assets/images/u-tb.svg" alt="icon">
+                              </div>
+                              Любой банк Узбекистана</td>
+                          <td class="valueInput">RUB</td>
+                          <td>Моментально</td>
+                          <td>
+                              <button class="button btn">Оплатить</button>
+                          </td>
+                      </tr>
+                      </tbody>
+                  </table>
+                  <ul class="content-mob__list">
+                      <li class="content-mob__item">
+                          <div class="content-mob__img-container">
+                              <div class="content-mob__img">
+                                  <img src="assets/images/sb-tb.svg" alt="icon">
+                              </div>
+                              <p class="text__mob">СберБанк</p>
+                          </div>
+                          <div class="content-mob__price-container">
+                              <div class="content-mob__sum">
+                                  <span class="text__sm">Сумма</span>
+                                  <span class="text__mob valueInput">RUB</span>
+                              </div>
+                              <div class="content-mob__price">
+                                  <div class="content-mob__price-text">
+                                      <span class="text__sm">Срок зачисления</span>
+                                      <span class="text__mob">Моментально</span>
+                                  </div>
+                                  <button class="button button__small btn">Оплатить</button>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="content-mob__item">
+                          <div class="content-mob__img-container">
+                              <div class="content-mob__img">
+                                  <img src="assets/images/tn-tb.svg" alt="icon">
+                              </div>
+                              <p class="text__mob">Тинькофф</p>
+                          </div>
+                          <div class="content-mob__price-container">
+                              <div class="content-mob__sum">
+                                  <span class="text__sm">Сумма</span>
+                                  <span class="text__mob valueInput">RUB</span>
+                              </div>
+                              <div class="content-mob__price">
+                                  <div class="content-mob__price-text">
+                                      <span class="text__sm">Срок зачисления</span>
+                                      <span class="text__mob">Моментально</span>
+                                  </div>
+                                  <button class="button button__small btn">Оплатить</button>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="content-mob__item">
+                          <div class="content-mob__img-container">
+                              <div class="content-mob__img">
+                                  <img src="assets/images/rf-tb.svg" alt="icon">
+                              </div>
+                              <p class="text__mob">Райффайзен</p>
+                          </div>
+                          <div class="content-mob__price-container">
+                              <div class="content-mob__sum">
+                                  <span class="text__sm">Сумма</span>
+                                  <span class="text__mob valueInput">RUB</span>
+                              </div>
+                              <div class="content-mob__price">
+                                  <div class="content-mob__price-text">
+                                      <span class="text__sm">Срок зачисления</span>
+                                      <span class="text__mob">Моментально</span>
+                                  </div>
+                                  <button class="button button__small btn">Оплатить</button>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="content-mob__item">
+                          <div class="content-mob__img-container">
+                              <div class="content-mob__img">
+                                  <img src="assets/images/ru-tb.svg" alt="icon">
+                              </div>
+                              <p class="text__mob">Любой банк РФ</p>
+                          </div>
+                          <div class="content-mob__price-container">
+                              <div class="content-mob__sum">
+                                  <span class="text__sm">Сумма</span>
+                                  <span class="text__mob valueInput">RUB</span>
+                              </div>
+                              <div class="content-mob__price">
+                                  <div class="content-mob__price-text">
+                                      <span class="text__sm">Срок зачисления</span>
+                                      <span class="text__mob">Моментально</span>
+                                  </div>
+                                  <button class="button button__small btn">Оплатить</button>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="content-mob__item">
+                          <div class="content-mob__img-container">
+                              <div class="content-mob__img">
+                                  <img src="assets/images/u-tb.svg" alt="icon">
+                              </div>
+                              <p class="text__mob">Любой банк Узбекистана</p>
+                          </div>
+                          <div class="content-mob__price-container">
+                              <div class="content-mob__sum">
+                                  <span class="text__sm">Сумма</span>
+                                  <span class="text__mob valueInput">RUB</span>
+                              </div>
+                              <div class="content-mob__price">
+                                  <div class="content-mob__price-text">
+                                      <span class="text__sm">Срок зачисления</span>
+                                      <span class="text__mob">Моментально</span>
+                                  </div>
+                                  <button class="button button__small btn">Оплатить</button>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div style="display: none" class="content__tabs-item">
+              <div class="content__input-container">
+  
+              </div>
+          </div>
+          <div style="display: none" class="content__tabs-item">
+              <div>
+                  <div class="content__input-container">
+                      <div class="content__input">
+                          <p class="text">Оплата счета на</p>
+                          <input type="number" placeholder="RUB" class="input-payCr">
+                      </div>
+                      <div class="content__input">
+                          <p class="text">Криптовалюты</p>
+                          <select class="js-choice2">
+                              <option>USDT (TRC20)</option>
+                              <option>USDT (ERC20)</option>
+                              <option>USDT (BEP20)</option>
+                              <option>ETH</option>
+                              <option>BTC</option>
+                              <option>BNB</option>
+                              <option>LTC</option>
+                              <option>BCH</option>
+                              <option>BTG</option>
+                              <option>ETC</option>
+                              <option>XRP</option>
+                              <option>ADA</option>
+                              <option>DASH</option>
+                              <option>ZEC</option>
+                              <option>DOGE</option>
+                              <option>XMR</option>
+                              <option>TRX</option>
+                              <option>USDP</option>
+                              <option>XLM</option>
+                              <option>XTZ</option>
+                              <option>EOS</option>
+                              <option>SHIB</option>
+                              <option>SOL</option>
+                          </select>
+                      </div>
+                  </div>
+                  <table class="cr">
+                      <thead>
+                      <tr>
+                          <th></th>
+                          <th>Сумма</th>
+                          <th>Срок зачисления</th>
+                          <th></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td class="nameCr">USDT (TRC20)</td>
+                          <td class="valueInputCr">RUB</td>
+                          <td>Моментально</td>
+                          <td>
+                              <button class="button btn">Оплатить</button>
+                          </td>
+                      </tr>
+                      </tbody>
+                  </table>
+                  <ul class="content-mob__list">
+                      <li class="content-mob__item">
+                          <div class="content-mob__img-container">
+                              <p class="text__mob nameCr__mob">USDT (TRC20)</p>
+                          </div>
+                          <div class="content-mob__price-container">
+                              <div class="content-mob__sum">
+                                  <span class="text__sm">Сумма</span>
+                                  <span class="text__mob valueInputCr__mob">RUB</span>
+                              </div>
+                              <div class="content-mob__price">
+                                  <div class="content-mob__price-text">
+                                      <span class="text__sm">Срок зачисления</span>
+                                      <span class="text__mob">Моментально</span>
+                                  </div>
+                                  <button class="button button__small btn">Оплатить</button>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+  <div class="po-pop__wrapper">
+      <div class="po-pop__modal">
+          <div  class="po-pop__modal-close">
+              <svg class="po-pop__close">
+                  <use href="#close">
+                  </use>
+              </svg>
+          </div>
+          <div class="po-pop__img">
+              <img src="assets/images/check.svg" alt="icon">
+          </div>
+          <p class="po-pop__text">Платеж успешно обработан</p>
+      </div>
+  </div>
+
+
+  <!-- Footer -->
+<!--  <footer>
+
+</footer>-->
+
+  <!-- popup -->
+<!--  <div class="po-pop__wrapper">
+    <div class="po-pop__modal">
+        <div  class="po-pop__modal-close">
+            <svg class="po-pop__close">
+                <use href="#close">
+                </use>
+            </svg>
+        </div>
+        <div class="po-pop__img">
+            <img src="assets/images/check.svg" alt="icon">
+        </div>
+        <p class="po-pop__text">Платеж успешно обработан</p>
+    </div>
+</div>-->
+
+
+
+  <!-- JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

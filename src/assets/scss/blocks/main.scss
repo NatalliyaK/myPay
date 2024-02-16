@@ -1,0 +1,41 @@
+
+.main {
+  height: 100vh;
+  background: radial-gradient(38.04% 50% at 77.76% 50%, rgba(66, 232, 224, 0.30) 0%, rgba(66, 232, 224, 0.00) 100%), #061817;
+  @include breakpoint($xl-bp) {
+    background: radial-gradient(37.11% 19.11% at 52.53% 23.15%, rgba(66, 232, 224, 0.30) 0%, rgba(66, 232, 224, 0.00) 100%), #061817;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 18rem;
+    @include breakpoint($xl-bp) {
+      padding: 4rem;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    h2 {
+      margin: 3.2rem 0 8rem;
+      @include breakpoint($xl-bp) {
+        margin: 2rem 0 6rem;
+      }
+    }
+  }
+
+  &__banner {
+    width: 79rem;
+    height: 69rem;
+    @include breakpoint($xl-bp) {
+      width: 60rem;
+      height: 30rem;
+    }
+    @include breakpoint($sm-bp) {
+      width: 23rem;
+      height: 22rem;
+    }
+  }
+}
